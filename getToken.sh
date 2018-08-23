@@ -7,7 +7,7 @@ client_id=p-config-server-60f69297-1fcf-4191-b84a-90db843ef379
 client_secret=5Y8mL0ZkIHnT
 #Dynamically created
 token=$(curl $access_token_uri -u $client_id:$client_secret -d grant_type=client_credentials | jq -r .access_token);
-#echo $token
+echo TOKEN:$token
 
 #echo curling the config server with said token
 #SAMPLE curl -H "Authorization: bearer $token" -H "Accept: application/json" $uri/app-name/profile | jq
