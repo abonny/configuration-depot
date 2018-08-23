@@ -1,3 +1,4 @@
-{
-  "message": "hello from company"
-}
+---
+spring:
+  profiles: cloud
+message: "hello from company"
