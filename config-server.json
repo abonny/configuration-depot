@@ -1,0 +1,8 @@
+{
+  "git": {
+    "uri": "https://github.com/abonny/configuration-depot.git"
+  },
+  "encrypt": {
+    "key": "myEncryptSeedIThink"
+  }
+}
