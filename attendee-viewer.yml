@@ -2,3 +2,16 @@
 feign:
   hystrix:
     enabled: true
+spring:
+  cloud:
+    security:
+      oauth2:
+        client:
+          clientId: ${vcap.services.oauth2.credentials.clientId}
+          clientSecret: ${vcap.services.oauth2.credentials.clientSecret}
+          accessTokenUri: https://github.com/login/oauth/access_token
+          userAuthorizationUri: https://github.com/login/oauth/authorize
+          clientAuthenticationScheme: form
+        resource:
+          userInfoUri: https://api.github.com/user
+
